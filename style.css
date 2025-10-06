@@ -1,0 +1,260 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  color: black;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  background: #3674B5;
+  padding: 15px 0;
+}
+
+.header-container {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Logo */
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+  color: black;
+  text-decoration: none;
+}
+
+/* Navigation */
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 40px;  
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+  padding: 8px 12px;  
+  transition: 0.3s;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+  border-bottom: 2px solid #fff;
+  padding-bottom: 6px;  /* lebih berjarak dari border bawah */
+}
+
+/* Login Button */
+.login {
+  background: #261FB3;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-weight: bold;
+  margin-left: 20px; 
+}
+
+.login:hover {
+  background: #fff;
+  color: #261FB3;
+}
+
+
+/* Hero Section */
+.home {
+  background: #3674B5;
+  color: black;
+  padding: 60px 0;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+  width: 90%;
+  margin: auto;
+}
+
+.hero-img img {
+  max-width: 400px;
+}
+
+.hero-content {
+  max-width: 500px;
+}
+
+.title {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.subtitle {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.hero-content p {
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+/* Email Box */
+.email-box {
+  display: flex;
+  width: 100%;
+  max-width: 400px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.email-box input {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  outline: none;
+}
+
+.email-box .btn {
+  background: #261FB3;
+  color: #fff;
+  border: none;
+  padding: 10px 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.email-box .btn:hover {
+  background: #fff;
+  color: black;
+}
+
+/* Sections */
+section {
+  padding: 60px 0;
+  text-align: center;
+}
+
+section h1 span {
+  font-size: 28px;
+  font-weight: bold;
+  border-bottom: 3px solid #3674B5;
+  padding-bottom: 5px;
+}
+
+/* Cards Layout */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* selalu 3 kolom */
+  gap: 25px;
+  width: 95%;
+  margin: 30px auto;
+}
+
+/* Card utama */
+.card {
+  background: #3674B5;
+  color: white;
+  padding: 30px 20px;       /* lebih besar biar panjang */
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: 0.3s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  min-height: 220px;  /* bikin lebih persegi panjang */
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  background: #285a91;
+}
+
+/* Icon dalam card */
+.card img {
+  width: 65px;
+  height: 65px;
+  object-fit: contain;
+  margin-bottom: 15px;
+}
+
+/* Judul card */
+.card h2 {
+  margin: 0 0 12px;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+/* Isi card */
+.card p,
+.card ul {
+  margin: 0;
+  text-align: left;
+  width: 100%;
+  line-height: 1.6;
+  font-size: 15px;
+}
+
+.card ul {
+  padding-left: 22px;
+}
+
+
+/* Contact Section */
+.contact-container {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+  max-width: 500px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+}
+
+.contact-form button {
+  background: #261FB3;
+  color: #fff;
+  border: none;
+  padding: 12px;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+.contact-form button:hover {
+  background: #fff;
+  color: #261FB3;
+}
